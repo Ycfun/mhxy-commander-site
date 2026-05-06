@@ -253,6 +253,9 @@
 
 /* 表格（重度使用） */
 .vp-doc table {
+  display: table;
+  width: 100%;
+  table-layout: auto;
   border: 1px solid var(--xyq-gold);
   box-shadow: 0 2px 8px rgba(139, 26, 26, 0.08);
 }
