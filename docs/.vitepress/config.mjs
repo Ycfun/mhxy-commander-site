@@ -30,11 +30,24 @@ export default {
       level: [2, 3],
       label: '页面导航',
     },
+    // 移动端 / 通用 UI 文案中文化
+    sidebarMenuLabel: '目录',
+    returnToTopLabel: '返回顶部',
+    langMenuLabel: '语言',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    externalLinkIcon: true,
     docFooter: {
       prev: '上一页',
       next: '下一页',
     },
     lastUpdatedText: '最后更新',
+    notFound: {
+      title: '页面未找到',
+      quote: '这个地方没有内容。',
+      linkText: '返回首页',
+    },
     footer: {
       message: '持续迭代中 · 内容仅供交流参考',
       copyright: '© 2026 梦幻西游逍遥勇武指挥手册',
@@ -45,9 +58,19 @@ export default {
         translations: {
           button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
           modal: {
-            noResultsText: '无相关结果',
+            displayDetails: '显示详情',
             resetButtonTitle: '清除查询',
-            footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' },
+            backButtonTitle: '关闭搜索',
+            noResultsText: '无相关结果',
+            footer: {
+              selectText: '选择',
+              selectKeyAriaLabel: '选中',
+              navigateText: '切换',
+              navigateUpKeyAriaLabel: '向上',
+              navigateDownKeyAriaLabel: '向下',
+              closeText: '关闭',
+              closeKeyAriaLabel: 'esc',
+            },
           },
         },
       },
