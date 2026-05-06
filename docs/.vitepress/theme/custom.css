@@ -337,6 +337,41 @@
   background: var(--vp-c-bg-soft) !important;
 }
 
+/* 统一导航栏布局 —— 避免切换到有 sidebar 的页面时搜索框右移 */
+@media (min-width: 960px) {
+  .VPNavBar.has-sidebar .wrapper {
+    padding: 0 32px;
+  }
+  .VPNavBar.has-sidebar .container {
+    max-width: calc(var(--vp-layout-max-width) - 64px);
+  }
+  .VPNavBar.has-sidebar .title {
+    position: static;
+    width: auto;
+    padding: 0;
+  }
+  .VPNavBar.has-sidebar .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .VPNavBar.has-sidebar .divider {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .VPNavBar.has-sidebar .title {
+    padding-left: 0;
+    width: auto;
+  }
+  .VPNavBar.has-sidebar .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .VPNavBar.has-sidebar .divider {
+    padding-left: 0;
+  }
+}
+
 /* 滚动条金色 */
 ::-webkit-scrollbar-thumb {
   background: rgba(184, 134, 11, 0.4);
