@@ -11,55 +11,55 @@ export default {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '快速入门', link: '/guide/basics' },
-      { text: '阵容体系', link: '/lineup/overview' },
-      { text: '战斗系统', link: '/combat/classes' },
-      { text: '指挥心法', link: '/strategy/principles' },
+      { text: '快速入门', link: '/guide' },
+      { text: '阵容体系', link: '/lineup' },
+      { text: '战斗系统', link: '/combat' },
+      { text: '指挥心法', link: '/strategy' },
     ],
     sidebar: {
-      '/guide/': [
+      '/guide': [
         {
           text: '快速入门',
           items: [
-            { text: '基础战斗机制', link: '/guide/basics' },
-            { text: 'PVP 场景规则', link: '/guide/scenes' },
+            { text: '基础战斗机制', link: '/guide#基础战斗机制' },
+            { text: 'PVP 场景规则', link: '/guide#pvp-场景规则' },
           ],
         },
       ],
-      '/lineup/': [
+      '/lineup': [
         {
           text: '阵容体系',
           items: [
-            { text: '三大阵容体系', link: '/lineup/overview' },
-            { text: '阵容选择原则', link: '/lineup/principles' },
-            { text: '阵容综合评分', link: '/lineup/comparison' },
-            { text: '打法体系与变体', link: '/lineup/playstyle' },
+            { text: '三大阵容体系', link: '/lineup#三大阵容体系' },
+            { text: '阵容选择原则', link: '/lineup#阵容选择核心原则' },
+            { text: '阵容综合评分', link: '/lineup#阵容变体对比与综合评分' },
+            { text: '打法体系与变体', link: '/lineup#三套阵容核心打法体系' },
           ],
         },
       ],
-      '/combat/': [
+      '/combat': [
         {
           text: '战斗系统',
           items: [
-            { text: '职业体系', link: '/combat/classes' },
-            { text: '宝宝机制与克制', link: '/combat/pets' },
-            { text: '阵法体系', link: '/combat/formations' },
-            { text: '法宝体系', link: '/combat/artifacts' },
-            { text: '变身卡', link: '/combat/transform' },
-            { text: '特技体系', link: '/combat/skills' },
-            { text: '道具与药品', link: '/combat/items' },
+            { text: '职业体系', link: '/combat#职业知识库' },
+            { text: '宝宝机制与克制', link: '/combat#宝宝机制与克制体系' },
+            { text: '阵法体系', link: '/combat#阵法体系' },
+            { text: '法宝体系', link: '/combat#法宝体系' },
+            { text: '变身卡', link: '/combat#变身卡' },
+            { text: '特技体系', link: '/combat#特技体系-pvp-核心' },
+            { text: '道具与药品', link: '/combat#道具体系与药物速查' },
           ],
         },
       ],
-      '/strategy/': [
+      '/strategy': [
         {
           text: '指挥心法',
           items: [
-            { text: 'PK 最高战略原则', link: '/strategy/principles' },
-            { text: 'PK 核心战略认知', link: '/strategy/awareness' },
-            { text: '核心指挥决策框架', link: '/strategy/framework' },
-            { text: '进阶战术原则', link: '/strategy/advanced' },
-            { text: '资深指挥交流精要', link: '/strategy/expert' },
+            { text: 'PK 最高战略原则', link: '/strategy#pk-最高战略原则' },
+            { text: 'PK 核心战略认知', link: '/strategy#pk-核心战略认知' },
+            { text: '核心指挥决策框架', link: '/strategy#核心指挥决策框架' },
+            { text: '进阶战术原则', link: '/strategy#进阶战术原则' },
+            { text: '资深指挥交流精要', link: '/strategy#资深指挥交流精要' },
           ],
         },
       ],

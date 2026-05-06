@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /guide/basics
+      link: /guide
 
 features:
   - icon: ❖

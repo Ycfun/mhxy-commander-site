@@ -323,6 +323,26 @@
   font-weight: 600;
 }
 
+/* 滚动时自动高亮的锚点（JS 注入 .anchor-active） */
+.VPSidebar a.link.anchor-active .text {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 700 !important;
+}
+.VPSidebar a.link.anchor-active {
+  position: relative;
+}
+.VPSidebar a.link.anchor-active::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 16px;
+  background: linear-gradient(180deg, var(--xyq-gold) 0%, var(--vp-c-brand-1) 100%);
+  border-radius: 2px;
+}
+
 /* 页脚 */
 .VPFooter {
   background: linear-gradient(180deg, transparent, rgba(139, 26, 26, 0.05));
