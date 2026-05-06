@@ -4,6 +4,10 @@ export default {
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'alternate icon', href: '/favicon.svg' }],
+  ],
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
