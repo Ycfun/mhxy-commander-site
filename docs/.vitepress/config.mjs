@@ -12,29 +12,14 @@ export default {
     nav: [
       { text: '首页', link: '/' },
       { text: '指挥心法', link: '/commander' },
-      { text: '团队配置', link: '/team' },
-      { text: '实验阵容', link: '/experimental' },
     ],
-    sidebar: [
-      {
-        text: '核心知识',
-        items: [
-          { text: '指挥心法（核心）', link: '/commander' },
-        ],
-      },
-      {
-        text: '阵容',
-        items: [
-          { text: '团队配置', link: '/team' },
-          { text: '实验阵容', link: '/experimental' },
-        ],
-      },
-    ],
+    // 单页内容，不需要侧栏分组，留空则只显示文章大纲
+    sidebar: false,
+    aside: true,
     outline: {
       level: [2, 3],
       label: '页面导航',
     },
-    // 移动端 / 通用 UI 文案中文化
     sidebarMenuLabel: '目录',
     returnToTopLabel: '返回顶部',
     langMenuLabel: '语言',

@@ -9,23 +9,17 @@ hero:
     - theme: brand
       text: 开始阅读
       link: /commander
-    - theme: alt
-      text: 团队配置
-      link: /team
 
 features:
-  - title: 指挥心法
-    details: 核心决策框架、宝宝克制体系、战术原则。基于实战沉淀。
-    link: /commander
-    linkText: 查看心法
-  - title: 团队配置
-    details: 固定阵容成员代号、装备、宠物、行动顺序、定位分工。
-    link: /team
-    linkText: 查看配置
-  - title: 实验阵容
-    details: 非标准配置的测试记录与战术思路，持续更新。
-    link: /experimental
-    linkText: 查看记录
+  - icon: ❖
+    title: 阵容思路
+    details: 大唐 + 魔王点杀核心，女儿 + 方寸双封，花生辅助焊死。围绕点杀体系搭建阵容。
+  - icon: ⚔
+    title: 战术框架
+    details: 清宝宝断节奏、魔暝点杀窗口、偷花生人头、控制花生。每回合的操作逻辑与取舍。
+  - icon: ♛
+    title: 指挥心法
+    details: 上下端特技分工、药品计数、操作有效性、魔王观察位。细节成就胜负。
 ---
 
 ## 关于这里
