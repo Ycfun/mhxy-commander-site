@@ -1,0 +1,327 @@
+/* ========== 梦幻西游风格主题 ========== */
+/* 参考 xyq.163.com：深红 / 金色 / 中式衬线 / 宣纸感 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap');
+
+:root {
+  /* 主色 —— 深朱砂红 */
+  --vp-c-brand-1: #8B1A1A;
+  --vp-c-brand-2: #a83232;
+  --vp-c-brand-3: #c04040;
+  --vp-c-brand-soft: rgba(139, 26, 26, 0.14);
+
+  /* 金色点缀 */
+  --xyq-gold: #b8860b;
+  --xyq-gold-light: #d4a845;
+  --xyq-gold-bright: #e8c767;
+
+  /* 宣纸底色 */
+  --vp-c-bg: #faf3e4;
+  --vp-c-bg-alt: #f3e9ce;
+  --vp-c-bg-soft: #f7eed9;
+  --vp-c-bg-elv: #fffaf0;
+
+  /* 墨字 */
+  --vp-c-text-1: #2c1810;
+  --vp-c-text-2: #5a3a28;
+  --vp-c-text-3: #8a6a54;
+
+  /* 分割线 */
+  --vp-c-divider: rgba(139, 26, 26, 0.18);
+  --vp-c-gutter: rgba(139, 26, 26, 0.08);
+  --vp-c-border: rgba(139, 26, 26, 0.2);
+
+  /* 首页 Hero —— 红金渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #8B1A1A 20%, #b8860b 60%, #e8c767 90%);
+  --vp-home-hero-tagline-color: #6b3410;
+  --vp-home-hero-text-color: #8B1A1A;
+
+  /* 按钮 */
+  --vp-button-brand-bg: linear-gradient(135deg, #8B1A1A 0%, #a83232 100%);
+  --vp-button-brand-hover-bg: linear-gradient(135deg, #a83232 0%, #c04040 100%);
+  --vp-button-brand-active-bg: linear-gradient(135deg, #6b1010 0%, #8B1A1A 100%);
+  --vp-button-brand-border: #b8860b;
+  --vp-button-brand-hover-border: #d4a845;
+  --vp-button-brand-text: #faf3e4;
+
+  --vp-button-alt-bg: #f3e9ce;
+  --vp-button-alt-hover-bg: #e8d9a8;
+  --vp-button-alt-border: rgba(139, 26, 26, 0.4);
+  --vp-button-alt-hover-border: #8B1A1A;
+  --vp-button-alt-text: #8B1A1A;
+
+  /* 字体 */
+  --vp-font-family-base: 'Noto Serif SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', serif;
+  --vp-font-family-mono: 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
+
+  /* 代码块 */
+  --vp-code-block-bg: rgba(43, 24, 16, 0.06);
+  --vp-code-bg: rgba(139, 26, 26, 0.08);
+  --vp-code-color: #8B1A1A;
+}
+
+/* 暗色模式 —— 黑底金字 */
+.dark {
+  --vp-c-bg: #1a0e08;
+  --vp-c-bg-alt: #22120a;
+  --vp-c-bg-soft: #2a1810;
+  --vp-c-bg-elv: #2a1810;
+  --vp-c-text-1: #f0e6d2;
+  --vp-c-text-2: #d4b896;
+  --vp-c-text-3: #a88866;
+  --vp-c-divider: rgba(212, 168, 69, 0.25);
+  --vp-c-border: rgba(212, 168, 69, 0.3);
+  --vp-c-brand-1: #d4a845;
+  --vp-c-brand-2: #e8c767;
+  --vp-c-brand-3: #f0d88a;
+  --vp-c-brand-soft: rgba(212, 168, 69, 0.16);
+  --vp-home-hero-name-background: linear-gradient(120deg, #e8c767 20%, #d4a845 60%, #c04040 90%);
+  --vp-home-hero-tagline-color: #d4b896;
+  --vp-button-brand-bg: linear-gradient(135deg, #8B1A1A 0%, #c04040 100%);
+}
+
+/* ========== 宣纸纹理（轻微） ========== */
+.VPDoc, .VPHome {
+  background-image:
+    radial-gradient(ellipse at top, rgba(184, 134, 11, 0.06), transparent 60%),
+    radial-gradient(ellipse at bottom right, rgba(139, 26, 26, 0.04), transparent 60%);
+  background-attachment: fixed;
+}
+
+/* ========== 首页 Hero 加强 ========== */
+.VPHero .name {
+  font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif !important;
+  font-size: clamp(44px, 7vw, 88px) !important;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  filter: drop-shadow(2px 2px 0 rgba(139, 26, 26, 0.15));
+}
+
+.VPHero .text {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 500;
+  font-size: clamp(20px, 2.6vw, 32px) !important;
+  color: var(--vp-c-text-1);
+}
+
+.VPHero .tagline {
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  font-size: clamp(14px, 1.5vw, 20px) !important;
+  letter-spacing: 3px;
+}
+
+/* 首页按钮：金边朱砂底 */
+.VPButton {
+  border-radius: 4px !important;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-width: 2px !important;
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand {
+  box-shadow: 0 4px 12px rgba(139, 26, 26, 0.35), inset 0 0 0 1px rgba(232, 199, 103, 0.5);
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 26, 26, 0.5), inset 0 0 0 1px #e8c767;
+}
+
+/* ========== 功能卡片 ========== */
+.VPFeature {
+  background: linear-gradient(145deg, #fffaf0 0%, #f7eed9 100%);
+  border: 1px solid rgba(184, 134, 11, 0.3) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(139, 26, 26, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.VPFeature::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8B1A1A 0%, #b8860b 50%, #e8c767 100%);
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(139, 26, 26, 0.2);
+  border-color: #b8860b !important;
+}
+
+.dark .VPFeature {
+  background: linear-gradient(145deg, #2a1810 0%, #1a0e08 100%);
+  border-color: rgba(212, 168, 69, 0.3) !important;
+}
+
+.VPFeature .title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  font-size: 20px !important;
+}
+
+/* ========== 导航栏 ========== */
+.VPNavBar {
+  background: rgba(250, 243, 228, 0.92) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(184, 134, 11, 0.25);
+}
+
+.dark .VPNavBar {
+  background: rgba(26, 14, 8, 0.92) !important;
+}
+
+.VPNavBarTitle .title {
+  font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif !important;
+  font-size: 22px !important;
+  color: var(--vp-c-brand-1) !important;
+  letter-spacing: 1px;
+}
+
+/* ========== 文章正文 ========== */
+.vp-doc h1 {
+  font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif;
+  font-size: 2.4em;
+  color: var(--vp-c-brand-1);
+  border-bottom: 3px double var(--xyq-gold);
+  padding-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.vp-doc h2 {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  border-left: 4px solid var(--xyq-gold);
+  padding-left: 14px;
+  margin-top: 48px;
+  letter-spacing: 1px;
+}
+
+.vp-doc h3 {
+  font-family: 'Noto Serif SC', serif;
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
+
+.vp-doc h2::before {
+  content: '❖ ';
+  color: var(--xyq-gold);
+  font-weight: normal;
+  margin-right: 4px;
+}
+
+/* 段落与引用 */
+.vp-doc p {
+  line-height: 1.85;
+  font-size: 16px;
+}
+
+.vp-doc blockquote {
+  background: linear-gradient(90deg, rgba(184, 134, 11, 0.08), transparent);
+  border-left: 4px solid var(--xyq-gold);
+  border-radius: 0 4px 4px 0;
+  padding: 12px 20px;
+  color: var(--vp-c-text-2);
+  font-style: normal;
+}
+
+/* 表格（重度使用） */
+.vp-doc table {
+  border: 1px solid var(--xyq-gold);
+  box-shadow: 0 2px 8px rgba(139, 26, 26, 0.08);
+}
+
+.vp-doc tr:first-child th,
+.vp-doc th {
+  background: linear-gradient(135deg, #8B1A1A 0%, #a83232 100%) !important;
+  color: #faf3e4 !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-color: #b8860b !important;
+}
+
+.vp-doc tr:nth-child(even) td {
+  background: rgba(184, 134, 11, 0.05);
+}
+
+.vp-doc tr:hover td {
+  background: rgba(184, 134, 11, 0.12) !important;
+}
+
+.dark .vp-doc tr:first-child th {
+  background: linear-gradient(135deg, #6b1010 0%, #8B1A1A 100%) !important;
+}
+
+/* 加粗强调 */
+.vp-doc strong {
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+}
+
+.dark .vp-doc strong {
+  color: var(--xyq-gold-light);
+}
+
+/* 行内代码 */
+.vp-doc :not(pre) > code {
+  background: rgba(139, 26, 26, 0.08);
+  color: var(--vp-c-brand-1);
+  border: 1px solid rgba(139, 26, 26, 0.15);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* 侧边栏 */
+.VPSidebar {
+  background: var(--vp-c-bg-soft) !important;
+  border-right: 1px solid rgba(184, 134, 11, 0.2);
+}
+
+.VPSidebarItem.level-0 > .item > .link > .text {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  color: var(--vp-c-brand-1) !important;
+  letter-spacing: 1px;
+}
+
+.VPSidebarItem .link:hover .text {
+  color: var(--xyq-gold) !important;
+}
+
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600;
+}
+
+/* 页脚 */
+.VPFooter {
+  background: linear-gradient(180deg, transparent, rgba(139, 26, 26, 0.05));
+  border-top: 2px solid rgba(184, 134, 11, 0.25);
+  font-family: 'ZCOOL XiaoWei', serif;
+  letter-spacing: 2px;
+}
+
+/* 搜索框 */
+.DocSearch-Button {
+  border: 1px solid rgba(139, 26, 26, 0.3) !important;
+  background: var(--vp-c-bg-soft) !important;
+}
+
+/* 滚动条金色 */
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 134, 11, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(184, 134, 11, 0.7);
+}
