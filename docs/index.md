@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 逍遥勇武
   text: 梦幻西游·89指挥手册
-  tagline: 简洁 · 权威 · 有逻辑
+  tagline: 梦幻西游逍遥勇武团队手册
   actions:
     - theme: brand
       text: 开始阅读
