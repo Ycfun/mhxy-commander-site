@@ -357,38 +357,41 @@
   background: var(--vp-c-bg-soft) !important;
 }
 
-/* 统一导航栏布局 —— 避免切换到有 sidebar 的页面时搜索框右移 */
+/* 统一导航栏布局 —— 避免切换到有 sidebar 的页面时搜索框右移
+   注意：VitePress scoped 样式带 [data-v-xxx]，特异性 > 纯类选择器，
+   所以必须 !important 才能覆盖 */
 @media (min-width: 960px) {
   .VPNavBar.has-sidebar .wrapper {
-    padding: 0 32px;
+    padding: 0 32px !important;
   }
   .VPNavBar.has-sidebar .container {
-    max-width: calc(var(--vp-layout-max-width) - 64px);
+    max-width: calc(var(--vp-layout-max-width) - 64px) !important;
   }
   .VPNavBar.has-sidebar .title {
-    position: static;
-    width: auto;
-    padding: 0;
+    position: static !important;
+    width: auto !important;
+    padding: 0 !important;
+    background-color: transparent !important;
   }
   .VPNavBar.has-sidebar .content {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .VPNavBar.has-sidebar .divider {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 }
 @media (min-width: 1440px) {
   .VPNavBar.has-sidebar .title {
-    padding-left: 0;
-    width: auto;
+    padding-left: 0 !important;
+    width: auto !important;
   }
   .VPNavBar.has-sidebar .content {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .VPNavBar.has-sidebar .divider {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 }
 
