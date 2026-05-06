@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /commander
+      link: /guide/basics
 
 features:
   - icon: ❖

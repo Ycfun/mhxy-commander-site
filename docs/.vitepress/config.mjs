@@ -11,10 +11,59 @@ export default {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '指挥心法', link: '/commander' },
+      { text: '快速入门', link: '/guide/basics' },
+      { text: '阵容体系', link: '/lineup/overview' },
+      { text: '战斗系统', link: '/combat/classes' },
+      { text: '指挥心法', link: '/strategy/principles' },
     ],
-    // 单页内容，不需要侧栏分组，留空则只显示文章大纲
-    sidebar: false,
+    sidebar: {
+      '/guide/': [
+        {
+          text: '快速入门',
+          items: [
+            { text: '基础战斗机制', link: '/guide/basics' },
+            { text: 'PVP 场景规则', link: '/guide/scenes' },
+          ],
+        },
+      ],
+      '/lineup/': [
+        {
+          text: '阵容体系',
+          items: [
+            { text: '三大阵容体系', link: '/lineup/overview' },
+            { text: '阵容选择原则', link: '/lineup/principles' },
+            { text: '阵容综合评分', link: '/lineup/comparison' },
+            { text: '打法体系与变体', link: '/lineup/playstyle' },
+          ],
+        },
+      ],
+      '/combat/': [
+        {
+          text: '战斗系统',
+          items: [
+            { text: '职业体系', link: '/combat/classes' },
+            { text: '宝宝机制与克制', link: '/combat/pets' },
+            { text: '阵法体系', link: '/combat/formations' },
+            { text: '法宝体系', link: '/combat/artifacts' },
+            { text: '变身卡', link: '/combat/transform' },
+            { text: '特技体系', link: '/combat/skills' },
+            { text: '道具与药品', link: '/combat/items' },
+          ],
+        },
+      ],
+      '/strategy/': [
+        {
+          text: '指挥心法',
+          items: [
+            { text: 'PK 最高战略原则', link: '/strategy/principles' },
+            { text: 'PK 核心战略认知', link: '/strategy/awareness' },
+            { text: '核心指挥决策框架', link: '/strategy/framework' },
+            { text: '进阶战术原则', link: '/strategy/advanced' },
+            { text: '资深指挥交流精要', link: '/strategy/expert' },
+          ],
+        },
+      ],
+    },
     aside: true,
     outline: {
       level: [2, 3],
