@@ -1,6 +1,6 @@
 export default {
   title: '梦幻西游逍遥勇武指挥手册',
-  description: '畅玩服89级PVP团队指挥知识库 —— 满天地府国标体系',
+  description: '畅玩服89级PVP团队指挥知识库',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
