@@ -37,13 +37,16 @@
   --vp-home-hero-tagline-color: #6b3410;
   --vp-home-hero-text-color: #8B1A1A;
 
-  /* 按钮 */
-  --vp-button-brand-bg: linear-gradient(135deg, #8B1A1A 0%, #a83232 100%);
-  --vp-button-brand-hover-bg: linear-gradient(135deg, #a83232 0%, #c04040 100%);
-  --vp-button-brand-active-bg: linear-gradient(135deg, #6b1010 0%, #8B1A1A 100%);
+  /* 按钮 —— 背景用纯色（VitePress 用 background-color，渐变无效） */
+  --vp-button-brand-bg: #8B1A1A;
+  --vp-button-brand-hover-bg: #a83232;
+  --vp-button-brand-active-bg: #6b1010;
   --vp-button-brand-border: #b8860b;
   --vp-button-brand-hover-border: #d4a845;
+  --vp-button-brand-active-border: #b8860b;
   --vp-button-brand-text: #faf3e4;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-active-text: #faf3e4;
 
   --vp-button-alt-bg: #f3e9ce;
   --vp-button-alt-hover-bg: #e8d9a8;
@@ -122,12 +125,27 @@
 }
 
 .VPButton.brand {
+  background: linear-gradient(135deg, #8B1A1A 0%, #a83232 100%) !important;
+  color: #faf3e4 !important;
+  border-color: #b8860b !important;
   box-shadow: 0 4px 12px rgba(139, 26, 26, 0.35), inset 0 0 0 1px rgba(232, 199, 103, 0.5);
 }
 
 .VPButton.brand:hover {
+  background: linear-gradient(135deg, #a83232 0%, #c04040 100%) !important;
+  color: #ffffff !important;
+  border-color: #d4a845 !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(139, 26, 26, 0.5), inset 0 0 0 1px #e8c767;
+}
+
+.VPButton.alt {
+  color: #8B1A1A !important;
+}
+
+.VPButton.alt:hover {
+  color: #6b1010 !important;
+  border-color: #8B1A1A !important;
 }
 
 /* ========== 功能卡片 ========== */
